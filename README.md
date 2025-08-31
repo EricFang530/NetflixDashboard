@@ -18,6 +18,23 @@ python app.py
 
 啟動後請造訪 http://127.0.0.1:5000 以瀏覽儀表板。
 
+方法二：一鍵啟動（適用於 Windows 使用者）
+若您使用 Windows，並希望快速完成所有設定，可使用我們提供的 start_dashboard.bat 腳本，一鍵完成以下步驟：
+- 下載專案
+- 建立並啟動 Conda 環境
+- 安裝所有依賴套件
+- 啟動應用程式
+📄 start_dashboard.bat 內容如下：
+@echo off
+echo 🚀 正在啟動 NetflixDashboard 專案...
+git clone https://github.com/EricFang530/NetflixDashboard.git
+cd NetflixDashboard
+call conda create -n netflixenv python=3.11 -y
+call conda activate netflixenv
+pip install -r requirements.txt
+python app.py
 
+
+💡 若尚未安裝 Conda，請先前往 Anaconda 官方網站 進行安裝。
 
 
