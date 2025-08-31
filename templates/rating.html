@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rating Distribution</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .caption {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+        .home-link {
+            display: block;
+            text-decoration: none;
+            color: #FF6F61;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Rating Distribution</h2>
+
+    <div class="chart-container">
+        {{ chart|safe }}
+    </div>
+
+    <div class="caption">
+        This chart shows the distribution of content ratings on Netflix. 
+        <strong>TV-MA</strong> and <strong>TV-14</strong> dominate, reflecting a focus on mature and teen audiences. 
+        <br><br>
+        Ratings outside the top five are grouped under <strong>Other</strong> for clarity.
+    </div>
+
+    <a href="/" class="home-link">Back to Home</a>
+</body>
+</html>

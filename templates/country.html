@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Production Countries</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            margin: 0 auto;
+            max-width: 900px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .caption {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .home-link {
+            margin-top: 30px;
+            display: block;
+            text-decoration: none;
+            color: #FF6F61;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Top Production Countries</h2>
+
+    <div class="chart-container">
+        {{ chart|safe }}
+    </div>
+
+    <div class="caption">
+        This chart displays the top 15 countries producing Netflix content. 
+        <strong>United States</strong> and <strong>India</strong> lead the list, reflecting major content hubs. 
+        <br><br>
+        Countries are ranked by the number of titles, with each bar representing production volume.
+    </div>
+
+    <a href="/" class="home-link">Back to Home</a>
+</body>
+</html>

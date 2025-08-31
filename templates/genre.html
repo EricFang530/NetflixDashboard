@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genre Breakdown</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            margin: 0 auto;
+            max-width: 900px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        p {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #FF6F61;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Genre Breakdown</h2>
+    <div class="chart-container">
+        {{ chart|safe }}
+    </div>
+    <p>
+        This chart highlights the top 15 genres on Netflix. <strong>International Movies</strong> and <strong>Dramas</strong> are the most prevalent, reflecting global and emotional storytelling trends.
+        <br><br>
+        Genres are ranked by frequency, with each bar representing the number of titles in that category.
+    </p>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

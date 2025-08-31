@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .intro {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 50px;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 35px;
+            width: 280px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: #333;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #FF6F61;
+        }
+        .card-desc {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Netflix Dashboard</h1>
+    <p class="intro">
+        Explore Netflix content through three distinct lenses: ratings, genres, and production countries.
+        Each module presents a clear, standalone visualization to help you understand viewer preferences and content trends.
+    </p>
+
+    <div class="card-container">
+        <a href="/rating" class="card">
+            <div class="card-title">📊 Rating Distribution</div>
+            <div class="card-desc">View the top five rating categories and how other ratings are grouped for clarity.</div>
+        </a>
+        <a href="/genre" class="card">
+            <div class="card-title">🎬 Genre Breakdown</div>
+            <div class="card-desc">Explore the 15 most popular genres on Netflix, visualized in a ranked bar chart.</div>
+        </a>
+        <a href="/country" class="card">
+            <div class="card-title">🌍 Top Production Countries</div>
+            <div class="card-desc">Discover the top 15 countries producing Netflix content, shown in a clean horizontal chart.</div>
+        </a>
+    </div>
+
+    <footer>
+        Built with Flask & Plotly · Data from Netflix · © 2025
+    </footer>
+</body>
+</html>
