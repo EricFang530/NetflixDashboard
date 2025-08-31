@@ -1,0 +1,12 @@
+name: netflix_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - flask
+  - pandas
+  - plotly
+  - pip
+  - pip:
+      - gunicorn  # 可選：部署時用，開發可省略
