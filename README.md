@@ -1,12 +1,21 @@
-# NetflixViz
-A modular, narratively-driven dashboard built from raw Netflix data.   Each chart and label is refined for clarity, balance, and explanatory purpose.   This repo showcases genre, country, and rating modules with minimal, elegant fixes.
+NetflixDashboard transforms raw Netflix data into an interactive, visually coherent dashboard. Built with Flask and Plotly, it guides users through exploratory prompts and curated visualizations to uncover patterns in global content consumption.
+Each chart and label is refined for clarity, balance, and explanatory purpose. This repo showcases genre, country, and rating modules with minimal, elegant fixes—emphasizing reproducibility and onboarding clarity.
+# 1. Clone the repo
+git clone https://github.com/EricFang530/NetflixDashboard.git
+cd NetflixDashboard
 
-📊 NetflixDashboard
-A modular, narrative-driven dashboard built in Python to explore and visualize Netflix viewing trends.
-Designed for clarity, scalability, and storytelling—each module reveals a different facet of the data, from genre popularity to country distribution and rating dynamics.
+# 2. Create and activate Conda environment
+conda create -n netflixenv python=3.11
+conda activate netflixenv
 
-🔍 Project Overview
-NetflixDashboard transforms raw Netflix data into an interactive, visually coherent dashboard.
-Built with Flask and Matplotlib/Seaborn, it guides users through exploratory prompts and curated visualizations to uncover patterns in global content consumption.
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the app
+python app.py
+
+Visit http://127.0.0.1:5000 to explore the dashboard.
+
+
 
 
